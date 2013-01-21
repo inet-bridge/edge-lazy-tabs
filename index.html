@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+        <script src="http://code.jquery.com/jquery-1.9.0.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>     
+<!--CURRENT, 'BROKEN' WAY OF INCLUDING CHARTS IN TABS. INCLUDED PURELY FOR BEFORE/AFTER PURPOSES -->
+  	<div class="tabbed" style="margin-bottom:0px;">
+		<div>Current, "broken" way of including charts in tabs. All charts are fetched when the page is loaded. First tab works, while formatting is messed up for the rest</div>
+	<!--TAB MENU OPTIONS-->
+		    <ul class="menu tabMenu finIndicatorLabels" id="tabbedCharts_standard">
+		    	<li id='semdex_chart' class="selected"><a href="#" style="text-transform:none;padding:6px 5px 11px 5px;">SEMDEX Chart</a></li>
+		        <li id='demex_chart' ><a href="#" class="chartLink" style="text-transform:none;padding:6px 5px 11px 5px;">DEMEX Chart</a></li>
+		    </ul>
+	<!--CHART 1-->		    
+		    <div class="tabContent" style="display: block;">
+		        <div class="content" style="display: block;">
+		        	<div id="tab_semdex">
+<iframe src="http://gizmos.inet.co.za/demo/basic_charting_snippets/MjAxMi0wOC0wMSAwODozNjo0MiBVVEMxOTFkZW1vX2hhc2gwNjk1Mjc4NzAw" style="width: 100%; height: 177px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0"></iframe>
+					</div>
+		        </div>
+		    </div>
+	<!--CHART 2-->				    
+		    <div class="tabContent" style="display: none;">
+		        <div class="content" style="display: block;">    
+		            <div id="tab_demex">
+		            	<iframe src="http://gizmos.inet.co.za/demo/basic_charting_snippets/MjAxMy0wMS0xOCAwNjo1OTozMyBVVEM0NjBkZW1vX2hhc2hkZW1vNjdiZDdkZTMw" style="width: 100%; height: 177px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0"></iframe>
+		            </div>
+		        </div>
+		    </div>
+	<!--CHART 3-->				    				    
+		</div>  		        
+
+<!--LAZY-LOADING METHOD ONLY FETCHES TABBED CONTENT AS NECCESARY -->	 
+		<div class="tabbed" style="margin-bottom:0px;">
+		<div>Lazy-loading method renders first chart & only fetches the rest when the user clicks on the tab</div>
+	<!--TAB MENU OPTIONS-->
+		    <ul class="menu tabMenu finIndicatorLabels" id="tabbedCharts">
+		    	<li id='semdex_chart' class="selected"><a href="#" style="text-transform:none;padding:6px 5px 11px 5px;">SEMDEX Chart</a></li>
+		        <li id='demex_chart' ><a href="#" class="chartLink" style="text-transform:none;padding:6px 5px 11px 5px;">DEMEX Chart</a></li>
+		    </ul>
+	<!--CHART 1-->		    
+		    <div class="tabContent" style="display: block;">
+		        <div class="content" style="display: block;">
+		        	<div id="tab_semdex_1">
+		        		<span class="chartContainer">&nbsp;</span>	
+					</div>
+		        </div>
+		    </div>
+	<!--CHART 2-->				    
+		    <div class="tabContent" style="display: none;">
+		        <div class="content" style="display: block;">    
+		            <div id="tab_demex_1">
+		            	<span class="chartContainer">&nbsp;</span>
+		            </div>
+		        </div>
+		    </div>
+		</div>  
+    </body>
+</html>
