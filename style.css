@@ -1,0 +1,41 @@
+/* Tabs */
+  
+.tabbed .tabContent
+{
+    display: none; 
+	padding:20px 20px 26px;
+} 
+
+.tabbed ul.menu { 
+    margin:0;
+    padding: 0;
+    height: 30px; 
+}
+
+.tabbed ul.menu li
+{
+    float: left;
+    display: inline;
+    margin: 0; 
+}
+
+.tabbed ul.menu a
+{
+    float: left;
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px; 
+    color:#6b6b6b;
+    font-size:.98em
+}	
+
+.tabbed ul.menu li.selected a
+{
+    text-decoration: none;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    border-bottom:0;
+    color:#333333;
+    font-weight: bold
+} 
